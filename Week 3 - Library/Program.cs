@@ -7,6 +7,12 @@ class Book
     string Author;
     string ISBN;
 
+    public Book(string bookTitle, string bookAuthor, string bookISBN)
+    {
+        Title = bookTitle;
+        Author = bookAuthor;
+        ISBN = bookISBN;
+    }
     void DisplayInfo()
     {
         Console.WriteLine($"Book title: {Title}");
@@ -18,24 +24,8 @@ class Book
     {
 
 
-        //create a new object of the book class
-        Book book = new Book();
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
-        //This is a book within the library
-        book.Title = "C# for beginners";
-        book.Author = "BillGates";
-        book.ISBN = "12345678";
-
-        //creating a 2nd book class
-
-        Book book1 = new Book();
-        book1.Title = "C# Methods and classes";
-        book1.Author = "Microsoft";
-        book1.ISBN = "55667778";
-
-
-
-        book.DisplayInfo();
-        book1.DisplayInfo();
+        book.DisplayInfo(); 
     }
 }
