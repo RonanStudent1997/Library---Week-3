@@ -8,9 +8,9 @@ namespace Week_3___Library
 {
     class Book
     {
-        private string title; //variable
-        private string author; //variable
-        private string isbn; //variable
+        private string title; // private variables
+        private string author; 
+        private string isbn; 
 
         //title property allows acces to the private title variable
         public string Title
@@ -18,11 +18,13 @@ namespace Week_3___Library
             get { return title; } //get method
             set { title = value; } //set method
         }
+
         public string Author
         {
             get { return author; } //get method
             set { author = value; } //set method
         }
+
         public string ISBN
         {
             get { return isbn; } //get method
